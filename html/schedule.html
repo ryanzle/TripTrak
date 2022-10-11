@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripTrak: Santa Clara Reviews</title>
+
+    <!--insert name of stylesheet-->
+    <!--
+        style tips:
+        -all of the header buttons have the class "header-button"
+        -all of the reviews have the class "review"
+        -all of the reviewer names have the class "reviewer"
+        -everything is still organized into sections
+    -->
+    <link rel = "stylesheet" type = "text/css" href = "../css/stylesheet.css"/> 
+
+    <!--insert any fonts you'd like to use from google fonts, select the "link href" option-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <section id="header">
+        <!-- <a href="./index.html" id = "home" class = "header-button">TripTrak</button> -->
+        <a href = "../index.html" > 
+            <img src="../media/Logo.png" id = "logo">
+        </a>
+        <!--insert logo here-->
+<nav>
+        <input type="text" id="search" placeholder="Search destination" />
+        
+        <a href="./faq.html" id = "faq-button" class = "header-button">FAQ</a>
+        <!--wip, will add faq page later-->
+
+        <a href="./login.html" id = "login-button">Log In</a>
+        <!--wip, will add login page later-->
+
+        <a href="./register.html" id = "signup-button">Sign Up</a>
+        <!--wip, will add signup page later-->
+    </nav>
+    </section>
+    <main>
+    <h1>Welcome, Fred</h1>
+    <p>Don’t wait until it’s too late; plan your tour for your dream vacation now! We are providing the best travel experience that both local and tourist reviews alike can vouch for!</p>
+
+    <h2>Trip to Grand Tetons Schedule</h2>
+    <div>
+    <div style="display: flex; justify-content: flex-end;">
+        <div class="sch-outer-box">
+            <p>+ Add day</p>
+        </div>
+        <div class="sch-outer-box">
+            <span class="sch-head">FRI</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/22</span>
+                <p>Travel Day</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <span class="sch-head">SAT</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/23</span>
+                <p><b>9pm</b> Arrive at BnB</p>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div class="sch-outer-box">
+            <span class="sch-head">SUN</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/24</span>
+                <p><b>9pm</b> Mammoth Caves</p>
+                <hr />
+                <p>Tornado Landing</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <span class="sch-head">MON</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/25</span>
+                <p>Grand Teton Trek</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <span class="sch-head">TUE</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/26</span>
+                <p>Canyons</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <span class="sch-head">WED</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/27</span>
+                <p>Canyons</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <span class="sch-head">THURS</span>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/28</span>
+                <p>Canyons</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <div style="margin-top: 1.7rem"></div>
+            <div class="sch-inner-box">
+                <span class="sch-date">2/29</span>
+                <p>Canyons</p>
+            </div>
+        </div>
+        <div class="sch-outer-box">
+            <p>+ Add day</p>
+        </div>
+    </div>
+</div>
+    <h2 style="margin-top: 3em">Explore attractions</h2>
+        <!--you can add the images with text over them to this section if you'd like,
+    but you don't have to-->
+    <section id = "menu">
+        <a href="./results.html" id="cities-page" class = "menu-button">Cities</a>
+        <!--wip, will add a cities page later-->
+
+        <a href="./results.html" id = "activities-page" class = "menu-button">Activities</a>
+        <!--wip, will add an activities page later-->
+
+        <a href="./reviews.html" id = "reviews-page" class = "menu-button">See Top Reviews Now!</a>
+        <script>
+            document.getElementById("reviews-page").addEventListener("click", link);
+            function link() {
+                window.location.href = "./reviews.html"
+            }
+        </script>
+    </section>
+
+</main>
+</body>
+</html>

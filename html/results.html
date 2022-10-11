@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripTrak: Santa Clara Reviews</title>
+
+    <!--insert name of stylesheet-->
+    <!--
+        style tips:
+        -all of the header buttons have the class "header-button"
+        -all of the reviews have the class "review"
+        -all of the reviewer names have the class "reviewer"
+        -everything is still organized into sections
+    -->
+    <link rel = "stylesheet" type = "text/css" href = "../css/stylesheet.css"/> 
+
+    <!--insert any fonts you'd like to use from google fonts, select the "link href" option-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <section id="header">
+        <!-- <a href="./index.html" id = "home" class = "header-button">TripTrak</button> -->
+        <a href = "../index.html" > 
+            <img src="../media/Logo.png" id = "logo">
+        </a>
+        <!--insert logo here-->
+<nav>
+        <input type="text" id="search" placeholder="Search destination" />
+        
+        <a href="./faq.html" id = "faq-button" class = "header-button">FAQ</a>
+        <!--wip, will add faq page later-->
+
+        <a href="./login.html" id = "login-button">Log In</a>
+        <!--wip, will add login page later-->
+
+        <a href="./register.html" id = "signup-button">Sign Up</a>
+        <!--wip, will add signup page later-->
+    </nav>
+    </section>
+    <main>
+    <h1>Results</h1>
+    <p>Sorting by 
+        <select>
+            <option>Highest Rated</option>
+            <option>Most Popular</option>
+            <option>A-Z</option>
+            <option>Distance</option>
+        </select>
+    </p>
+        <div style="width:100%; display: flex">
+            <a href="reviews.html"><img src="../media/tetons.png" style="width:12em;height: 12em;" /></a>
+            <div style="margin-left: 1em">
+                <a href="reviews.html"><h3>Grand Tetons</h3></a>
+                <h4>4.3/5 ⭐⭐⭐⭐</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+            </div>
+        </div>
+        <div style="width:100%; display: flex">
+            <img src="../media/tetons.png" style="width:12em;height: 12em;" />
+            <div style="margin-left: 1em">
+                <h3>Grand Canyon</h3>
+                <h4>4.3/5 ⭐⭐⭐⭐⭐</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+            </div>
+        </div>
+        <div style="width:100%; display: flex">
+            <img src="../media/yo.png" style="width:12em;height: 12em;" />
+            <div style="margin-left: 1em">
+                <h3>Yosemite National Park  </h3>
+                <h4>4/5 ⭐⭐⭐⭐</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+            </div>
+        </div>
+</main>
+</body>
+</html>

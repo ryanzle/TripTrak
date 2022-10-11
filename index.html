@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripTrak</title>
+
+    <!--insert name of stylesheet-->
+    <!--
+        style tips:
+        -all of the header buttons have the class "header-button"
+        -all of the menu buttons have the class "menu-button"
+        -everything is organized into sections
+    -->
+    <link rel = "stylesheet" type = "text/css" href = "./css/stylesheet.css"/> 
+
+    <!--insert any fonts you'd like to use from google fonts, select the "link href" option-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <section id="header">
+        <!-- <a href="./index.html" id = "home" class = "header-button">TripTrak</button> -->
+        <a href = "./index.html" > 
+            <img src="./media/Logo.png" id = "logo">
+        </a>
+        <!--insert logo here-->
+<nav>
+        <input type="text" id="search" placeholder="Search destination" />
+        <a href="./html/faq.html" id = "faq-button" class = "header-button">FAQ</a>
+        <!--wip, will add faq page later-->
+
+        <a href="./html/login.html" id = "login-button">Log In</a>
+        <!--wip, will add login page later-->
+
+        <a href="./html/register.html" id = "signup-button">Sign Up</a>
+        <!--wip, will add signup page later-->
+    </nav>
+    </section>
+<main style="margin: 0 3em">
+    <section id = "intro">
+        <h1>Welcome to TripTrak!</h1>
+        <p>Don't wait until it's too late; plan for your dream vacation now! 
+            We are providing the best travel experience that both local and tourist 
+            reviews alike can vouch for!
+        </p>
+    </section>
+    
+    <!--you can add the images with text over them to this section if you'd like,
+    but you don't have to-->
+    <section id = "menu">
+        <a href="./html/results.html" id="cities-page" class = "menu-button">Cities</a>
+        <!--wip, will add a cities page later-->
+
+        <a href="./html/results.html" id = "activities-page" class = "menu-button">Activities</a>
+        <!--wip, will add an activities page later-->
+
+        <a href="./html/reviews.html" id = "reviews-page" class = "menu-button">See Top Reviews Now!</a>
+        <script>
+            document.getElementById("reviews-page").addEventListener("click", link);
+            function link() {
+                window.location.href = "./reviews.html"
+            }
+        </script>
+    </section>
+
+    
+</body>
+</html>
